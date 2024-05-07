@@ -61,7 +61,7 @@ const renderCharacter = character => {
   heightSpan.textContent = character?.height;
   massSpan.textContent = character?.mass;
   birthYearSpan.textContent = character?.birth_year;
-  homeworldSpan;
+  homeworldSpan.innerHTML = `<a href="/planet.html?id=${character?.homeworld.id}">${character?.homeworld.name}</a>`;
   const filmsLis = character?.films?.map(film => `<li><a href="/films.html?id=${film.id}">${film.title}</li>`)
   filmsUl.innerHTML = filmsLis.join("");
   
