@@ -43,7 +43,7 @@ async function fetchHomeworld(character) {
   const planet = await fetch(url)
     .then(res => res.json())
   let planetWorld = {'planet': {planet}};
-  localStorage
+  
     return planet;
 
 }
